@@ -2149,8 +2149,8 @@ input, select, textarea {
 
 	.wrapper {
 		background: #fff;
-		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		/* margin: 0 0 2em 0; */
+		padding: 6em 0 2em 0;
 	}
 
 		.wrapper.style2 {
@@ -2161,16 +2161,25 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
 		color: #fff;
 		text-align: center;
-		padding: 7.5em 0 2em 0;
 		cursor: default;
 	}
 
+	body.homepage .h {
+		background-image: url("../../images/header.jpg");
+		height: 100vh;
+		min-height: 40em;
+		padding: 7.5em 0 2em 0;
+	}
+	body.homepage .h-other {
+		background-image: url("../../images/header-others.jpg");
+		padding: 1em 0 2em 0;		
+		margin-bottom: 3em;
+	}
 		#header:before {
 			content: '';
 			display: inline-block;
@@ -2213,7 +2222,8 @@ input, select, textarea {
 			line-height: 4.5em;
 			text-align: center;
 			font-size: 1.25em;
-			padding: 0;
+    padding-bottom: 35px;
+	padding: 0;
 		}
 
 		#header hr {
@@ -2231,9 +2241,9 @@ input, select, textarea {
 			margin: 1em 0 0 0;
 		}
 
-	body.homepage #header {
+	/* body.homepage #header {
 		height: 100vh;
-		min-height: 40em;
+		min-height: 40em; */
 	}
 
 		body.homepage #header h1 {
@@ -2444,7 +2454,7 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		padding: 6em 0 6em 0;
+		padding: 2em 0;
 		background: #2b252c;
 		color: #fff;
 	}
@@ -2939,7 +2949,7 @@ input, select, textarea {
 					top: 0;
 					width: 100%;
 					height: 100%;
-					background: url("images/overlay.png");
+					/* background: url("images/overlay.png"); */
 					background-size: 128px 128px;
 				}
 

@@ -1,0 +1,28 @@
+#footer h3 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.special p{
+    text-align: center;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about p{
+    padding-top: 1em;
+}
+
+@media screen and (min-width: 737px) {
+    .special {
+        padding-bottom: 3em;
+    }   
+}
+
+@media screen and (max-width: 736px) {
+    .homepage .h-other {
+        padding: 0px !important;
+    }
+}
