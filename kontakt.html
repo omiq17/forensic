@@ -48,17 +48,20 @@
                         <form id="contact" action="mailto:someone@example.co" method="post">
                             <h3>Skicka oss ett e-mail</h3>
                             <fieldset>
-                                <input placeholder="Your name*" type="text" tabindex="1" required autofocus>
+                                <label for="name">Name*</label>
+                                <input type="text" tabindex="1" name="name" required>
                             </fieldset>
                             <fieldset>
-                               <input placeholder="Your Email Address*" type="email" tabindex="2" required>
+                                <label for="email">Email*</label>
+                               <input type="email" tabindex="2" required>
                             </fieldset>
                             <fieldset>
-                                <input placeholder="Your Mobile Number*" type="tel" tabindex="3" required>
+                                <label for="mobile">Mobile*</label>
+                                <input type="tel" tabindex="3" required>
                             </fieldset>
                             <fieldset>
+                                <label for="problem">Vad Har ni för problem?*</label>                                
                                 <select placeholder="Select"  tabindex="4" required>
-                                    <option value="" disabled selected>Vad Har ni för problem?*</option>
                                     <option value="Hårddisk">Hårddisk</option>
                                     <option value="Mobiltelefon">Mobiltelefon</option>
                                     <option value="Forensic">Forensic</option>
@@ -66,15 +69,16 @@
                                 </select>
                             </fieldset>
                             <fieldset>
+                                <label for="beställare">Beställare*</label>                                
                                 <select placeholder="Select" tabindex="4" required>
-                                    <option value="" disabled selected>Beställare*</option>
                                     <option value="Privetperson">Privetperson</option>
                                     <option value="Företag">Företag</option>
                                     <option value="Myndighet">Myndighet</option>
                                 </select>
                                 </fieldset>
                             <fieldset>
-                                <textarea placeholder="Type your Message Here*" tabindex="5" required></textarea>
+                                <label for="message">Your message*</label>                                
+                                <textarea tabindex="5" required></textarea>
                             </fieldset>
                             <fieldset>
                                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
