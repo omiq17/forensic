@@ -6,14 +6,6 @@
 .special p{
     text-align: center;
 }
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#about p{
-    padding-top: 1em;
-}
 
 @media screen and (min-width: 737px) {
     .special {
@@ -25,4 +17,147 @@
     .homepage .h-other {
         padding: 0px !important;
     }
+}
+
+
+/* 
+---------------------Contact Us---------------------------
+*/
+.forContact {
+    margin-bottom: 0px;
+}
+#section {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: #FFF;
+}
+#section #left {
+    width: 50%;
+    margin: auto;
+    background: aliceblue;
+    margin: 0px 25px 25px;
+}
+#section #right {
+    width: 50%;
+    margin: auto;
+    background: aliceblue;
+    margin: 0px 25px 25px;
+}
+
+@media screen and (max-width: 736px) {
+    #section {
+        display: block;
+    }
+    #section #left {
+        width: 100%;
+        margin: auto;
+    }
+    #section #right {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#right #map {
+    padding: 25px;
+    margin: 25px 0;
+}
+
+#right #call {
+    display: flex;
+}
+#right #call span {
+    font-size: 28px;
+    font-weight: 500;
+    margin: auto 25px;
+}
+
+#contact {
+	padding: 25px;
+	margin: 25px 0;
+}
+
+#map h3, #contact h3 {
+	color: #df7366;
+	display: block;
+	font-size: 25px;
+    font-weight: 400;
+    padding: 0px 0px 15px ; 
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+#contact fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact select,
+#contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding: 3px 10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact select:hover,
+#contact select:focus,
+#contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #df7366;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#df7366;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:coral;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
 }

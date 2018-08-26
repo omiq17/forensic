@@ -1940,7 +1940,7 @@ input, select, textarea {
 
 /* Form */
 
-	form label {
+	/* form label {
 		display: block;
 		font-weight: 400;
 		color: #483949;
@@ -1973,9 +1973,9 @@ input, select, textarea {
 		form textarea:focus {
 			background: #fff;
 			border-color: #df7366;
-		}
+		} */
 
-	form input[type="text"],
+	/* form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select {
@@ -2004,7 +2004,7 @@ input, select, textarea {
 
 	form ::-moz-focus-inner {
 		border: 0;
-	}
+	} */
 
 /* Table */
 
