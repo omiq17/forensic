@@ -11,10 +11,11 @@ if(isset($_POST['submit'])){
     $to = $myemail;
     $email_subject = $subject;
     $email_body = "Name: ". $name . "\n".
-                            "Mobile No.:" .$mobile. "\n".                       
-                            "Problem:" .$problem. "\n".                        
-                            "Client:". $mobile. "\n".                    
-                            "Message:". $message;                        
+                            "Mobile: " .$mobile. "\n".                       
+                            "Email: " .$email_address. "\n".                       
+                            "Problem: " .$problem. "\n".                        
+                            "Client: ". $client. "\n".                    
+                            "Message:\n". $message;                        
     $headers = "From: $email_address\n";
     $headers .= "Reply-To: $myemail";
     // echo $to,$email_subject, $email_body, $headers;

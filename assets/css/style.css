@@ -1,3 +1,6 @@
+header h2 {
+    margin-bottom: 20px;
+}
 #footer h3 {
     text-align: center;
     padding: 15px 0px;
@@ -130,7 +133,8 @@
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
-	border:1px solid #df7366;
+    border:1px solid #df7366;
+    outline: none;
 }
 
 #contact textarea {
