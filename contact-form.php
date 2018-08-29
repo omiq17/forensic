@@ -3,7 +3,7 @@ if(isset($_POST['submit'])){
     $myemail = 'info@data-recovery-pro.net';//<-----Put Your email address here.
     $name = $_POST['name'];
     $email_address = $_POST['email'];
-    $subject = "Mail from an user";
+    $subject = "Mail from user: ". $email_address;
     $message = $_POST['message'];
     $mobile = $_POST['mobile'];
     $problem = $_POST['problem'];

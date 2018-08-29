@@ -9,7 +9,13 @@ header h2 {
 #features p{
     text-align: center;
 }
-
+#features article img {
+    display: inherit;
+    margin: auto;
+}
+#features article header {
+    margin: 25px 0 15px;
+}
 @media screen and (min-width: 737px) {
     .special {
         padding-bottom: 3em;
